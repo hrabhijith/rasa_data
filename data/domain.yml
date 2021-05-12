@@ -10,6 +10,7 @@ intents:
   - bot_challenge
   - fine_tuning_PCB
   - movies_of_Keanu_reeves
+  - github
 
 actions:
   - action_person_movies
