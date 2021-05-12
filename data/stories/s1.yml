@@ -64,3 +64,11 @@ stories:
   - action: utter_can_i_help
   - intent: movies_of_Keanu_reeves 
   - action: action_person_movies
+  
+ - story: github
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_can_i_help
+  - intent: github
+  - action: utter_github
