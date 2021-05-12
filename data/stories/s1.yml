@@ -1,1 +1,66 @@
 
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_can_i_help
+  - intent: fine_tuning_PCB
+  - action: utter_fine_tuning
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_can_i_help
+  - intent: affirm
+  - action: utter_fine_tuning
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_can_i_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: fine tuning PCB
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_can_i_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: fine tuning PCB
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_can_i_help
+  - intent: affirm
+  - action: utter_fine_tuning
+
+- story: fine tuning PCB
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_can_i_help
+  - intent: fine_tuning_PCB
+  - action: utter_fine_tuning
+
+- story: movies of an actor
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_can_i_help
+  - intent: movies_of_Keanu_reeves 
+  - action: action_person_movies
