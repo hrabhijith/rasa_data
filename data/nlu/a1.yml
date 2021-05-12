@@ -110,3 +110,10 @@ nlu:
     - keanu reeves
     - keanu reeves movies
 
+- intent: github
+  examples: |
+    - why github?
+    - what is github?
+    - how to use github?
+    - github
+    - git
